@@ -1,0 +1,57 @@
+.keyboard {
+    max-width: 760px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px 26px;
+    padding: 10px 0;
+  }
+  
+  .button {
+    width: 58px;
+    height: 58px;
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    color: #333;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  .button:hover:not(:disabled) {
+    background-color: #ececec;
+  }
+  
+  .button:active:not(:disabled) {
+    transform: scale(0.96);
+  }
+  
+  .button:disabled {
+    cursor: default;
+    opacity: 1;
+  }
+  
+  .correct {
+    color: #0c7a16;
+    border-color: #0c7a16;
+  }
+  
+  .wrong {
+    color: #8b0000;
+    border-color: #8b0000;
+  }
+
+  @media (max-width: 768px) {
+    .row {
+      gap: 12px;
+    }
+  
+    .button {
+      width: 44px;
+      height: 44px;
+      font-size: 1.4rem;
+    }
+  }

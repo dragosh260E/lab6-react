@@ -1,5 +1,7 @@
+import Hangman from "./components/Hangman";
+
 function App() {
-    return <></>;
+    return <Hangman />;
 }
 
 export default App;

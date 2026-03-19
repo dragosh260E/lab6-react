@@ -1,0 +1,28 @@
+.word {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+  
+  .letter {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: #0c7a16;
+    text-transform: uppercase;
+    min-width: 32px;
+    text-align: center;
+    line-height: 1;
+  }
+
+  @media (max-width: 768px) {
+    .word {
+      gap: 16px;
+    }
+  
+    .letter {
+      font-size: 2.2rem;
+    }
+  }

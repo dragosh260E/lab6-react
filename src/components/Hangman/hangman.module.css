@@ -1,0 +1,64 @@
+.container {
+    min-height: 100vh;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+  }
+  
+  .stage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 320px;
+  }
+  
+  .stage img {
+    max-width: 260px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .win,
+  .lose {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .win {
+    color: #0c7a16;
+  }
+  
+  .lose {
+    color: #8b0000;
+  }
+  
+  .retryButton {
+    padding: 12px 22px;
+    border: 1px solid #bfbfbf;
+    background-color: #f7f7f7;
+    color: #333;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.2s ease;
+  }
+  
+  .retryButton:hover {
+    background-color: #ececec;
+  }
+  
+  .retryButton:active {
+    transform: scale(0.98);
+  }
